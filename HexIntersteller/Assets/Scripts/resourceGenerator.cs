@@ -7,7 +7,7 @@ public class resourceGenerator : MonoBehaviour
     [SerializeField] private GameObject Tilemap;
     List<GameObject> Hexi;
     List<int> amountCheck = new List<int>() { 12, 12, 12, 12};
-    [SerializeField] private List<Material> Materials;
+    [SerializeField] private List<GameObject> Tokens;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +42,7 @@ public class resourceGenerator : MonoBehaviour
         if(amountCheck[rnd] > 0)
         {
             amountCheck[rnd]--;
-            Hexi[i].transform.Find("Cube").GetComponent<MeshRenderer>().material = Materials[rnd];
+            Instantiate(Tokens[rnd],new Vector3(Hexi[i].transform.position.x + 0.2f, Hexi[i].transform.position.y + 0.018f, Hexi[i].transform.position.z + -0.2f),Quaternion.Euler(-90,-90,0),Hexi[i].transform);
             return;
         }
         step++;
