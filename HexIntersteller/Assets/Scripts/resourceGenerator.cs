@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class resourceGenerator : MonoBehaviour
+public class ResourceGenerator : MonoBehaviour
 {
     [SerializeField] private GameObject Tilemap;
     List<GameObject> Hexi;
@@ -14,7 +14,7 @@ public class resourceGenerator : MonoBehaviour
         Hexi = new List<GameObject>();
         for (int i = 0; i < Tilemap.transform.childCount; i++)
         {
-            Debug.Log(i);
+            //Debug.Log(i);
             GameObject tile = Tilemap.transform.GetChild(i).gameObject;
             if (tile.CompareTag("Hex") && tile.name != "Hex Tile Middle")
                 Hexi.Add(tile);
