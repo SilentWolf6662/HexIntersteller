@@ -2,45 +2,48 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CameraController : CinemachineInputProvider
+namespace HexInterstellar
 {
-	[SerializeField] private GameObject moveTarget;
-	[SerializeField] private InputActionReference activateOrbitControl, moveControl;
-	[SerializeField, Range(1, 10)] private float speedMultiplier = 2;
-	private InputAction activateOrbitAction, action, moveAction;
-	private bool isActivated;
-	private Vector2 moveDir;
-	private void Start()
+	public class CameraController : CinemachineInputProvider
 	{
-		activateOrbitAction = activateOrbitControl.action;
-		activateOrbitAction.Enable();
-		moveAction = moveControl.action;
-		moveAction.Enable();
-	}
-	private void Update()
-	{
-		moveDir = moveAction.ReadValue<Vector2>();
-		if (moveDir.x != 0 || moveDir.y != 0) moveTarget.transform.position += new Vector3(moveDir.x * Time.deltaTime * speedMultiplier, 0, moveDir.y * Time.deltaTime * speedMultiplier);
-	}
-	public override float GetAxisValue(int axis)
-	{
-		if (enabled)
+		[SerializeField] private GameObject moveTarget;
+		[SerializeField] private InputActionReference activateOrbitControl, moveControl;
+		[SerializeField, Range(1, 10)] private float speedMultiplier = 2;
+		private InputAction activateOrbitAction, action, moveAction;
+		private bool isActivated;
+		private Vector2 moveDir;
+		private void Start()
 		{
-			if (activateOrbitAction.ReadValue<float>() == 1)
+			activateOrbitAction = activateOrbitControl.action;
+			activateOrbitAction.Enable();
+			moveAction = moveControl.action;
+			moveAction.Enable();
+		}
+		private void Update()
+		{
+			moveDir = moveAction.ReadValue<Vector2>();
+			if (moveDir.x != 0 || moveDir.y != 0) moveTarget.transform.position += new Vector3(moveDir.x * Time.deltaTime * speedMultiplier, 0, moveDir.y * Time.deltaTime * speedMultiplier);
+		}
+		public override float GetAxisValue(int axis)
+		{
+			if (enabled)
 			{
-				action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);
-				if (action != null)
+				if (activateOrbitAction.ReadValue<float>() == 1)
 				{
-					switch (axis)
+					action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);
+					if (action != null)
 					{
-						case 0: return action.ReadValue<Vector2>().x;
-						case 1: return action.ReadValue<Vector2>().y;
-						case 2: return action.ReadValue<float>();
+						switch (axis)
+						{
+							case 0: return action.ReadValue<Vector2>().x;
+							case 1: return action.ReadValue<Vector2>().y;
+							case 2: return action.ReadValue<float>();
+						}
 					}
 				}
 			}
+			return 0;
 		}
-		return 0;
 	}
 }
 
