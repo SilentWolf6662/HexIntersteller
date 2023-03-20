@@ -58,3 +58,4 @@ HexIntersteller/*.unitypackage
 # Crashlytics generated file
 HexIntersteller/crashlytics-build.properties
 
+*.dwlt
