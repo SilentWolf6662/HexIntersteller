@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class BuildingManager : MonoBehaviour
 {
@@ -12,11 +13,15 @@ public class BuildingManager : MonoBehaviour
 
     private Vector3 pos;
 
+    private Quaternion rot;
+
     private RaycastHit hit;
 
     [SerializeField] private LayerMask[] layerMasks;
 
     private int indexSelected = 0;
+
+    Ray ray;
 
     private void Start()
     {
@@ -29,9 +34,11 @@ public class BuildingManager : MonoBehaviour
         if(pendingObject != null)
         {
             pendingObject.transform.position = pos;
+            pendingObject.transform.rotation = rot;
 
-            if (PlaceBuild.action.ReadValue<float>()>0)
+            if (PlaceBuild.action.ReadValue<float>()>0 && !EventSystem.current.IsPointerOverGameObject())
             {
+                Debug.Log("GOT HERE");
                 PlaceObject();
             }
         }
@@ -44,17 +51,20 @@ public class BuildingManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction*10);
         if (Physics.Raycast(ray, out hit, 1000, layerMasks[indexSelected]) && pendingObject != null)
         {
-            pos = hit.point;
+            pos = hit.transform.position;
+            rot = hit.transform.rotation;
         }
     }
 
     public void SelectedObject(int index)
     {
+        Destroy(pendingObject);
         pendingObject = Instantiate(objects[index], pos, transform.rotation);
         indexSelected = index;
+        Debug.Log(index);
     }
 }
