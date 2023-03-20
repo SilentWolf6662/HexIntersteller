@@ -26,23 +26,16 @@ namespace HexInterstellar
 		}
 		public override float GetAxisValue(int axis)
 		{
-			if (enabled)
+			if (!enabled && activateOrbitAction.ReadValue<float>() != 1) return 0;
+			action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);
+			if (action == null) return 0;
+			switch (axis)
 			{
-				if (activateOrbitAction.ReadValue<float>() == 1)
-				{
-					action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);
-					if (action != null)
-					{
-						switch (axis)
-						{
-							case 0: return action.ReadValue<Vector2>().x;
-							case 1: return action.ReadValue<Vector2>().y;
-							case 2: return action.ReadValue<float>();
-						}
-					}
-				}
+				case 0: return action.ReadValue<Vector2>().x;
+				case 1: return action.ReadValue<Vector2>().y;
+				case 2: return action.ReadValue<float>();
+				default: return 0;
 			}
-			return 0;
 		}
 	}
 }
