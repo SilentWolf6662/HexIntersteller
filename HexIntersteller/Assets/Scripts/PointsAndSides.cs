@@ -57,7 +57,8 @@ public class PointsAndSides : MonoBehaviour
     {
         for (int i = 0; i < sides.Count; i++)
         {
-            Instantiate(lanePoint, child.transform.position + sides[i], sideParent.transform.rotation, sideParent.transform);
+            GameObject Road = Instantiate(lanePoint, child.transform.position + sides[i], sideParent.transform.rotation, sideParent.transform);
+            Road.transform.LookAt(child.transform.position);
         }
     }
     public void CheckDoubble(GameObject Check)
