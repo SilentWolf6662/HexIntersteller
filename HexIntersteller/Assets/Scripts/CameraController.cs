@@ -7,11 +7,13 @@ namespace HexInterstellar
 	public class CameraController : CinemachineInputProvider
 	{
 		[SerializeField] private GameObject moveTarget;
+		[SerializeField] private GameObject cinemachineVCam;
 		[SerializeField] private InputActionReference activateOrbitControl, moveControl;
 		[SerializeField, Range(1, 10)] private float speedMultiplier = 2;
 		private InputAction activateOrbitAction, action, moveAction;
 		private bool isActivated;
 		private Vector2 moveDir;
+		private float look;
 		private void Start()
 		{
 			activateOrbitAction = activateOrbitControl.action;
@@ -22,21 +24,36 @@ namespace HexInterstellar
 		private void Update()
 		{
 			moveDir = moveAction.ReadValue<Vector2>();
-			if (moveDir.x != 0 || moveDir.y != 0) moveTarget.transform.position += new Vector3(moveDir.x * Time.deltaTime * speedMultiplier, 0, moveDir.y * Time.deltaTime * speedMultiplier);
+			if (moveDir.x > 0)
+				moveTarget.transform.position += Vector3.right * (Time.deltaTime * speedMultiplier);
+			if (moveDir.x < 0)
+				moveTarget.transform.position += Vector3.left * (Time.deltaTime * speedMultiplier);
+			if (moveDir.y > 0)
+				moveTarget.transform.position += Vector3.forward * (Time.deltaTime * speedMultiplier);
+			if (moveDir.y < 0)
+				moveTarget.transform.position += Vector3.back * (Time.deltaTime * speedMultiplier);
 		}
-		public override float GetAxisValue(int axis)
+		// ReSharper disable Unity.PerformanceAnalysis
+			public override float GetAxisValue(int axis)
 		{
 			if (!enabled) return 0;
 			if (activateOrbitAction.ReadValue<float>() != 1) return 0;
 			action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);
 			if (action == null) return 0;
+			// ReSharper disable once ConvertSwitchStatementToSwitchExpression
 			switch (axis)
 			{
-				case 0: return action.ReadValue<Vector2>().x;
-				case 1: return action.ReadValue<Vector2>().y;
-				case 2: return action.ReadValue<float>();
-				default: return 0;
+				case 0: look = action.ReadValue<Vector2>().x;
+					break;
+				case 1: look = action.ReadValue<Vector2>().y;
+					break;
+				case 2: look = action.ReadValue<float>();
+					break;
+				default: look = 0;
+					break;
 			}
+			moveTarget.transform.LookAt(-cinemachineVCam.transform.position);
+			return look;
 		}
 	}
 }
