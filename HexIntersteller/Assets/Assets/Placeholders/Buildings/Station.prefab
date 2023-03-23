@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6625919948679772337}
   - component: {fileID: 4599197826430067248}
   - component: {fileID: 8994710358845665457}
+  - component: {fileID: -8493586339178081753}
   m_Layer: 0
-  m_Name: Shitp
+  m_Name: Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5855630601843229877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8040333, y: 6.3717713, z: -0.44849315}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.125, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98,3 +99,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-8493586339178081753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5855630601843229877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed30476547a4d349acad64596fe156e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placedOn:
+    serializedVersion: 2
+    m_Bits: 256
