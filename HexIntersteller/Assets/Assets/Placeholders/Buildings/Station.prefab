@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4599197826430067248}
   - component: {fileID: 8994710358845665457}
   - component: {fileID: -8493586339178081753}
+  - component: {fileID: -8459743311577073055}
+  - component: {fileID: -5459341020714119150}
   m_Layer: 0
   m_Name: Station
   m_TagString: Untagged
@@ -114,3 +116,31 @@ MonoBehaviour:
   placedOn:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &-8459743311577073055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5855630601843229877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7483e17e56cc844c899225619f27413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: 0000000001000000
+  price: 0300000004000000
+--- !u!114 &-5459341020714119150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5855630601843229877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7483e17e56cc844c899225619f27413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: 
+  price: 

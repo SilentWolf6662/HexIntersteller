@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1036448240971155307}
   - component: {fileID: 9152527324099613363}
   - component: {fileID: 5785524683515350852}
+  - component: {fileID: 3443476755914658702}
+  - component: {fileID: -5022269259706880026}
   m_Layer: 0
   m_Name: Lane
   m_TagString: Untagged
@@ -113,3 +115,31 @@ MonoBehaviour:
   placedOn:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3443476755914658702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5486449477349635001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7483e17e56cc844c899225619f27413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: 0000000001000000
+  price: 0300000004000000
+--- !u!114 &-5022269259706880026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5486449477349635001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7483e17e56cc844c899225619f27413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: 
+  price: 

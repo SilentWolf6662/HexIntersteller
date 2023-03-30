@@ -270,9 +270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df114cceedc7634ca4cceabd634f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 0100000004000000
-  mat: 0000000002000000
-  resources: {fileID: 0}
+  toSpawn: {fileID: 5486449477349635001, guid: dc55f23fbd232954abc58cd69f9b5023, type: 3}
+  resources: {fileID: 604975973}
 --- !u!1 &93736672
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,9 +419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df114cceedc7634ca4cceabd634f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 0100000004000000
-  mat: 0000000002000000
-  resources: {fileID: 0}
+  toSpawn: {fileID: 5855630601843229877, guid: 4a7185cf9ad327a4bb345b880956767a, type: 3}
+  resources: {fileID: 604975973}
 --- !u!1 &142472418
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +623,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307053177}
-  m_LocalRotation: {x: -0.018189492, y: -0.000000001075221, z: -1.9560957e-11, w: 0.9998346}
+  m_LocalRotation: {x: -0.018189492, y: 0.000000001075221, z: 1.9560957e-11, w: 0.9998346}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -992,6 +990,17 @@ Transform:
   m_Father: {fileID: 839940212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &604975973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3712800381536135561, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
+  m_PrefabInstance: {fileID: 1794092827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da71ea788ea54594ea85c7253dd27926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &757775754 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3712800381484027831, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
@@ -1115,12 +1124,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1738940488}
-        m_TargetAssemblyTypeName: BuildingManager, HexInterstellar
+        m_TargetAssemblyTypeName: HexInterstellar.Resources.BuildingManager, HexInterstellar
         m_MethodName: SelectedObject
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1176,9 +1185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df114cceedc7634ca4cceabd634f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 0100000004000000
-  mat: 0000000002000000
-  resources: {fileID: 0}
+  toSpawn: {fileID: 2463388470170431503, guid: d258702110a55bb4abeed5cae2c55ad9, type: 3}
+  resources: {fileID: 604975973}
 --- !u!1 &1041093550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,7 +1998,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555813461}
-  m_LocalRotation: {x: -0.018189494, y: -0.000000002150442, z: -3.912192e-11, w: 0.9998346}
+  m_LocalRotation: {x: -0.018189494, y: 0.000000002150442, z: 3.912192e-11, w: 0.9998346}
   m_LocalPosition: {x: 0, y: 2.5, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2586,11 +2594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3712800382025992156, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 482
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 3712800382025992156, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 177
+      value: 67.688
       objectReference: {fileID: 0}
     - target: {fileID: 3712800382207723636, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
       propertyPath: m_AnchorMax.y

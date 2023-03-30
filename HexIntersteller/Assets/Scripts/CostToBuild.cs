@@ -8,12 +8,16 @@ namespace HexInterstellar.Resources
     public class CostToBuild : MonoBehaviour
     {
         private Button button;
-        [SerializeField] private int[] price;
-        [SerializeField] private Materials[] mat;
+        [SerializeField] private GameObject toSpawn;
+        private int[] price;
+        private Materials[] mat;
         [SerializeField] private Resources resources;
         private void Start()
         {
             button = GetComponent<Button>();
+            PriceForBuilding pfb = toSpawn.GetComponent<PriceForBuilding>();
+            mat = pfb.materials;
+            price = pfb.price;
             CheckBalance();
         }
         public void CheckBalance()

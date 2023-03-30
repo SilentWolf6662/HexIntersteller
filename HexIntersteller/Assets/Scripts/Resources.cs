@@ -81,6 +81,7 @@ namespace HexInterstellar.Resources
             for (int i = 0; i < costToBuild.Length; i++)
             {
 				costToBuild[i].CheckBalance();
+				Debug.Log($"Metal = {metalAmount}  Planar = {planarAmount}");
             }
         }
     }

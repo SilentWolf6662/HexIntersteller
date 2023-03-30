@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5659708938383747910}
   - component: {fileID: 2355555653606685139}
   - component: {fileID: -1312187173339878093}
+  - component: {fileID: 3886651222822078494}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -113,3 +114,17 @@ MonoBehaviour:
   placedOn:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &3886651222822078494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2463388470170431503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7483e17e56cc844c899225619f27413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: 0000000001000000
+  price: 0300000004000000
