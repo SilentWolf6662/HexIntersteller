@@ -7,12 +7,14 @@ namespace HexInterstellar
 	public class CameraController : CinemachineInputProvider
 	{
 		[SerializeField] private GameObject moveTarget;
-		[SerializeField] private GameObject cinemachineVCam;
+		[SerializeField] private Rigidbody moveTargetRigidbody;
+		[SerializeField] private Transform cinemachineVCam;
 		[SerializeField] private InputActionReference activateOrbitControl, moveControl;
 		[SerializeField, Range(1, 10)] private float speedMultiplier = 2;
 		private InputAction activateOrbitAction, action, moveAction;
 		private bool isActivated;
-		private Vector2 moveDir;
+		private Vector2 moveInput;
+		private Vector3 forward, right, fowardRelative, rightRelative, moveDirRelative, velocity;
 		private float look;
 		private void Start()
 		{
@@ -23,18 +25,16 @@ namespace HexInterstellar
 		}
 		private void Update()
 		{
-			moveDir = moveAction.ReadValue<Vector2>();
-			if (moveDir.x > 0)
-				moveTarget.transform.position += Vector3.right * (Time.deltaTime * speedMultiplier);
-			if (moveDir.x < 0)
-				moveTarget.transform.position += Vector3.left * (Time.deltaTime * speedMultiplier);
-			if (moveDir.y > 0)
-				moveTarget.transform.position += Vector3.forward * (Time.deltaTime * speedMultiplier);
-			if (moveDir.y < 0)
-				moveTarget.transform.position += Vector3.back * (Time.deltaTime * speedMultiplier);
+			moveInput = moveAction.ReadValue<Vector2>();
+			forward = cinemachineVCam.forward;
+			right = cinemachineVCam.right;
+			fowardRelative = moveInput.y * forward;
+			rightRelative = moveInput.x * right;
+			moveDirRelative = fowardRelative + rightRelative;
+			moveTarget.transform.Translate(moveDirRelative * (Time.deltaTime * speedMultiplier), Space.World);
 		}
 		// ReSharper disable Unity.PerformanceAnalysis
-			public override float GetAxisValue(int axis)
+		public override float GetAxisValue(int axis)
 		{
 			if (!enabled) return 0;
 			if (activateOrbitAction.ReadValue<float>() != 1) return 0;
@@ -43,16 +43,20 @@ namespace HexInterstellar
 			// ReSharper disable once ConvertSwitchStatementToSwitchExpression
 			switch (axis)
 			{
-				case 0: look = action.ReadValue<Vector2>().x;
+				case 0: 
+					look = action.ReadValue<Vector2>().x; 
 					break;
-				case 1: look = action.ReadValue<Vector2>().y;
+				case 1: 
+					look = action.ReadValue<Vector2>().y; 
 					break;
-				case 2: look = action.ReadValue<float>();
+				case 2: 
+					look = action.ReadValue<float>(); 
 					break;
-				default: look = 0;
+				default: 
+					look = 0; 
 					break;
 			}
-			moveTarget.transform.LookAt(-cinemachineVCam.transform.position);
+			moveTarget.transform.LookAt(-cinemachineVCam.position);
 			return look;
 		}
 	}
