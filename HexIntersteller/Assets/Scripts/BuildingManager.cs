@@ -54,7 +54,8 @@ public class BuildingManager : MonoBehaviour
 
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction*10);
-        if (Physics.Raycast(ray, out hit, 1000, pendingObject.GetComponent<LayerPlacement>().placedOn) && pendingObject != null)  
+        if(pendingObject != null)
+        if (Physics.Raycast(ray, out hit, 1000, pendingObject.GetComponent<LayerPlacement>().placedOn))  
         {
             pos = hit.transform.position;
             rot = hit.transform.rotation;

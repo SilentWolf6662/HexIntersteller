@@ -6,10 +6,10 @@ namespace HexInterstellar.Resources
 	public class Resources : MonoBehaviour 
 	{
 		[SerializeField] private TMP_Text creditText, planarText, metalText, rationText;
-		[SerializeField] private CostToBuild costToBuild;
+		[SerializeField] private CostToBuild[] costToBuild;
 		private int creditAmount, planarAmount, metalAmount, rationAmount;
 
-		private void Start() => creditAmount = planarAmount = metalAmount = rationAmount = 0;
+		private void Start() => creditAmount = planarAmount = metalAmount = rationAmount = 10;
 
 		public int GetAmount(string resourceType) => resourceType switch { "ration" => rationAmount, "metal" => metalAmount, "planar" => planarAmount, "credit" => creditAmount, _ => 0 };
 		public void AddAmount(int number, string resourceType)
@@ -29,7 +29,7 @@ namespace HexInterstellar.Resources
 					creditAmount += number;
 					break;
 			}
-			costToBuild.CheckBalance();
+			UpdateBal();
 		}
 		public void RemoveAmount(int number, string resourceType)
 		{
@@ -48,7 +48,7 @@ namespace HexInterstellar.Resources
 					creditAmount -= number;
 					break;
 			}
-			costToBuild.CheckBalance();
+			UpdateBal();
 		}
 		public void SetAmount(int number, string resourceType)
 		{
@@ -67,7 +67,7 @@ namespace HexInterstellar.Resources
 					creditAmount = number;
 					break;
 			}
-			costToBuild.CheckBalance();
+			UpdateBal();
 		}
 		public void UpdateUI()
 		{
@@ -76,5 +76,12 @@ namespace HexInterstellar.Resources
 			planarText.text = $"{planarAmount}x";
 			creditText.text = $"{creditAmount}x";
 		}
-	}
+        public void UpdateBal()
+        {
+            for (int i = 0; i < costToBuild.Length; i++)
+            {
+				costToBuild[i].CheckBalance();
+            }
+        }
+    }
 }

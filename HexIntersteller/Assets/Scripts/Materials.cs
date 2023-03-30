@@ -4,7 +4,7 @@
     {
         planar,//0
         metal,//1
-        food,//2
+        ration,//2
         credit//3
     }
 }
