@@ -25,7 +25,7 @@ namespace HexInterstellar
 		}
 		// ReSharper disable Unity.PerformanceAnalysis
 		public override float GetAxisValue(int axis)
-		{
+		{                                            
 			if (!enabled) return 0;
 			if (activateOrbitInput.action.ReadValue<float>() != 1) return 0;
 			action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);

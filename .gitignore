@@ -61,3 +61,5 @@ HexIntersteller/crashlytics-build.properties
 *.dwlt
 HexIntersteller/UserSettings/Layouts/default-2021.dwlt
 HexIntersteller/UserSettings/EditorUserSettings.asset
+HexIntersteller/Assets/FastScriptReload.meta
+HexIntersteller/Assets/FastScriptReload/**
