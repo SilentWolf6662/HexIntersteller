@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class LayerPlacement : MonoBehaviour
+namespace HexInterstellar.BuildingSystem
 {
-    public LayerMask placedOn;
+    public class LayerPlacement : MonoBehaviour
+    {
+        public LayerMask placedOn;
+    }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HexInterstellar
+namespace HexInterstellar.UI
 {
 	public class UIManager : MonoBehaviour
 	{

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
-namespace HexInterstellar.Resources
+namespace HexInterstellar.BuildingSystem
 {
     public class BuildingManager : MonoBehaviour
     {
@@ -20,7 +20,7 @@ namespace HexInterstellar.Resources
 
         Ray ray;
 
-        [SerializeField] private Resources resources;
+        [SerializeField] private ResourceSystem.Resources resources;
 
         PriceForBuilding price;
 

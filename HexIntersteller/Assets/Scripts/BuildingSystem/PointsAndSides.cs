@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HexInterstellar
+namespace HexInterstellar.BuildingSystem
 {
     public class PointsAndSides : MonoBehaviour
     {

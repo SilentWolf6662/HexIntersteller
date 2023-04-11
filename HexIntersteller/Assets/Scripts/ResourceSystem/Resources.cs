@@ -1,7 +1,8 @@
+using HexInterstellar.BuildingSystem;
 using TMPro;
 using UnityEngine;
 
-namespace HexInterstellar.Resources
+namespace HexInterstellar.ResourceSystem
 {
 	public class Resources : MonoBehaviour 
 	{

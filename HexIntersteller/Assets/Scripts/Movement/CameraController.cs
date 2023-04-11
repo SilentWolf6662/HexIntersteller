@@ -2,7 +2,7 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace HexInterstellar
+namespace HexInterstellar.Movement
 {
 	public class CameraController : CinemachineInputProvider
 	{

@@ -1,7 +1,8 @@
+using HexInterstellar.ResourceSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace HexInterstellar.Resources
+namespace HexInterstellar.BuildingSystem
 {
     public class CostToBuild : MonoBehaviour
     {
@@ -9,7 +10,7 @@ namespace HexInterstellar.Resources
         [SerializeField] private GameObject toSpawn;
         private int[] price;
         private Materials[] mat;
-        [SerializeField] private Resources resources;
+        [SerializeField] private ResourceSystem.Resources resources;
         private void Start()
         {
             button = GetComponent<Button>();

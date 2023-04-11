@@ -1,6 +1,7 @@
+using HexInterstellar.ResourceSystem;
 using UnityEngine;
 
-namespace HexInterstellar.Resources
+namespace HexInterstellar.BuildingSystem
 {
     public class PriceForBuilding : MonoBehaviour
     {
