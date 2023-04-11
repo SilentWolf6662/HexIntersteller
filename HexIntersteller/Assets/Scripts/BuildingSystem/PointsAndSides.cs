@@ -36,8 +36,8 @@ namespace HexInterstellar
                 AddPoints(transform.GetChild(i).gameObject);
                 Addsides(transform.GetChild(i).gameObject);
             }
-            CheckDoubble(pointParent);
-            CheckDoubble(sideParent);
+            CheckDouble(pointParent);
+            CheckDouble(sideParent);
         }
         public void AddPoints(GameObject child)
         {
@@ -63,7 +63,7 @@ namespace HexInterstellar
                 Road.transform.LookAt(position);
             }
         }
-        public void CheckDoubble(GameObject Check)
+        public void CheckDouble(GameObject Check)
         {
             for (int i = 0; i < Check.transform.childCount; i++)
             {
