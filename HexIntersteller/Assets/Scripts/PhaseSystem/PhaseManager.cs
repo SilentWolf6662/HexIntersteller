@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HexInterstellar
+namespace HexInterstellar.PhaseSystem
 {
     public class PhaseManager : MonoBehaviour
     {
