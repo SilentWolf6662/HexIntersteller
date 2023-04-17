@@ -81,10 +81,6 @@ namespace HexInterstellar.BuildingSystem
             Destroy(pendingObject);
             pendingObject = Instantiate(gm, pos, transform.rotation);
         }
-        public void CalcResources()
-        {
-
-        }
 
     }
 }
