@@ -24,11 +24,18 @@ namespace HexInterstellar.BuildingSystem
 
         PriceForBuilding price;
 
+        public GameObject p1Building;
+        public GameObject p2Building;
+
+        private PhaseSystem.PhaseManager phaseManager;
+        private PhaseSystem.PlayerTurn P1 = PhaseSystem.PlayerTurn.P1;
+        private PhaseSystem.PlayerTurn P2 = PhaseSystem.PlayerTurn.P2;
+
         private void Start()
         {
+            phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseSystem.PhaseManager>();
             PlaceBuild.action.Enable();
         }
-
         // Update is called once per frame
         void Update()
         {
@@ -40,12 +47,10 @@ namespace HexInterstellar.BuildingSystem
 
                 if (PlaceBuild.action.ReadValue<float>() > 0 && !EventSystem.current.IsPointerOverGameObject())
                 {
-                    Debug.Log("GOT HERE");
                     PlaceObject();
                 }
             }
         }
-
         public void PlaceObject()
         {
             price = pendingObject.GetComponent<PriceForBuilding>();
@@ -53,9 +58,12 @@ namespace HexInterstellar.BuildingSystem
             {
                 resources.RemoveAmount(price.price[i], price.materials[i].ToString());
             }
+            if (phaseManager.playerTurn == P1)
+                pendingObject.transform.SetParent(p1Building.transform);
+            else if (phaseManager.playerTurn == P2)
+                pendingObject.transform.SetParent(p2Building.transform);
             pendingObject = null;
         }
-
         private void FixedUpdate()
         {
 
@@ -68,11 +76,15 @@ namespace HexInterstellar.BuildingSystem
                     rot = hit.transform.rotation;
                 }
         }
-
         public void SelectedObject(GameObject gm)
         {
             Destroy(pendingObject);
             pendingObject = Instantiate(gm, pos, transform.rotation);
         }
+        public void CalcResources()
+        {
+
+        }
+
     }
 }

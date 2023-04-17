@@ -2,9 +2,9 @@
 {
 	public enum Materials
 	{
-		Planar = 0, //0
-		Metal = 1, //1
-		Ration = 2, //2
-		Credit = 3 //3
+		planar = 0, //0
+		metal = 1, //1
+		ration = 2, //2
+		credit = 3 //3
 	}
 }
