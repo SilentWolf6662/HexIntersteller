@@ -9,7 +9,7 @@ namespace HexInterstellar.PhaseSystem
         [SerializeField] public PlayerTurn playerTurn;
         [SerializeField] private ResourceSystem.Resources p1Resources, p2Resources;
         [SerializeField] private GameObject p1Buildings, p2Buildings;
-        [SerializeField] private PhaseState phaseState;
+        [SerializeField] private PhaseState phaseStated;
         private void Start()
         {
             if (Random.Range(0, 2) == 1) 
