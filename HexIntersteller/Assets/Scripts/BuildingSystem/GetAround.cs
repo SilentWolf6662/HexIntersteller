@@ -9,8 +9,8 @@ namespace HexInterstellar.BuildingSystem
     public class GetAround : MonoBehaviour
     {
 
-        [SerializeField]Dictionary<Materials, int> materials = new Dictionary<Materials, int>() { { Materials.credit, 0 }, { Materials.metal, 0 }, { Materials.planar, 0 }, { Materials.ration, 0 } };
-        [SerializeField]private GameObject levelGrid;
+        [SerializeField] private Dictionary<Materials, int> materials = new Dictionary<Materials, int>() { { Materials.credit, 0 }, { Materials.metal, 0 }, { Materials.planar, 0 }, { Materials.ration, 0 } };
+        [SerializeField] private GameObject levelGrid;
 
         private List<Vector3> points = new List<Vector3>
         {
@@ -23,7 +23,7 @@ namespace HexInterstellar.BuildingSystem
 
         };
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             levelGrid = GameObject.Find("Tilemap");
         }

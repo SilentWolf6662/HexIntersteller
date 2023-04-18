@@ -9,7 +9,7 @@ namespace HexInterstellar.PhaseSystem
         [SerializeField] public PlayerTurn playerTurn;
         [SerializeField] private ResourceSystem.Resources p1Resources, p2Resources;
         [SerializeField] private GameObject p1Buildings, p2Buildings;
-        [SerializeField] private PhaseState phaseStated;
+        [SerializeField] private PhaseState phaseState;
         private void Start()
         {
             if (Random.Range(0, 2) == 1) 
@@ -17,7 +17,6 @@ namespace HexInterstellar.PhaseSystem
             else
                 playerTurn = PlayerTurn.P2;
             phaseState = PhaseState.StartPhase;
-            Debug.Log($"Start Phase: {phaseState.ToString()}");
             NextPhase();
         }
         public void NextPhase()
@@ -28,16 +27,13 @@ namespace HexInterstellar.PhaseSystem
                 {
                     case PhaseState.StartPhase:
                         phaseState = PhaseState.BuildPhase;
-                        Debug.Log($"Phase: {phaseState.ToString()}");
                         break;
                     case PhaseState.BuildPhase:
                         phaseState = PhaseState.EndPhase;
-                        Debug.Log($"Phase: {phaseState.ToString()}");
                         continue;
                     case PhaseState.EndPhase:
                         EndTurn();
                         phaseState = PhaseState.BuildPhase;
-                        Debug.Log($"Phase: {phaseState.ToString()}");
                         break;
                     case PhaseState.StartCombatPhase:
                         break;
