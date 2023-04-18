@@ -6,11 +6,11 @@ namespace HexInterstellar.ResourceSystem
     public class ResourceGenerator : MonoBehaviour
     {
         [SerializeField] private GameObject Tilemap;
-        List<GameObject> Hexi;
-        List<int> amountCheck = new List<int>() { 12, 12, 12, 12 };
+        private List<GameObject> Hexi;
+        private List<int> amountCheck = new List<int>() { 12, 12, 12, 12 };
         [SerializeField] private List<GameObject> Tokens;
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             Hexi = new List<GameObject>();
             for (int i = 0; i < Tilemap.transform.childCount; i++)

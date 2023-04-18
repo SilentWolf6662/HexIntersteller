@@ -18,11 +18,11 @@ namespace HexInterstellar.BuildingSystem
 
         [SerializeField] private LayerMask[] layerMasks;
 
-        Ray ray;
+        private Ray ray;
 
         [SerializeField] private ResourceSystem.Resources resources;
 
-        PriceForBuilding price;
+        private PriceForBuilding price;
 
         public GameObject p1Building;
         public GameObject p2Building;
@@ -37,7 +37,7 @@ namespace HexInterstellar.BuildingSystem
             PlaceBuild.action.Enable();
         }
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (pendingObject != null)
             {
@@ -59,9 +59,14 @@ namespace HexInterstellar.BuildingSystem
                 resources.RemoveAmount(price.price[i], price.materials[i].ToString());
             }
             if (phaseManager.playerTurn == P1)
+            {
+                
                 pendingObject.transform.SetParent(p1Building.transform);
+            }
             else if (phaseManager.playerTurn == P2)
+            {
                 pendingObject.transform.SetParent(p2Building.transform);
+            }
             pendingObject = null;
         }
         private void FixedUpdate()
