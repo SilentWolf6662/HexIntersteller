@@ -153,8 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTurn: 0
-  p1Resources: {fileID: 0}
-  p2Resources: {fileID: 0}
+  p1Resources: {fileID: 604975973}
+  p2Resources: {fileID: 1952563224}
+  p1Buildings: {fileID: 1503237589}
+  p2Buildings: {fileID: 1512292755}
   phaseState: 0
 --- !u!4 &22101300
 Transform:
@@ -1164,7 +1166,7 @@ GameObject:
   - component: {fileID: 355960090}
   - component: {fileID: 355960089}
   m_Layer: 5
-  m_Name: Button
+  m_Name: End Turn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3677,8 +3679,8 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Bits: 128
   resources: {fileID: 604975973}
-  p1Building: {fileID: 0}
-  p2Building: {fileID: 0}
+  p1Building: {fileID: 1503237589}
+  p2Building: {fileID: 1512292755}
 --- !u!1001 &1794092827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4069,6 +4071,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1952563224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3712800382694336323, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
+  m_PrefabInstance: {fileID: 1794092827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da71ea788ea54594ea85c7253dd27926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2020283302

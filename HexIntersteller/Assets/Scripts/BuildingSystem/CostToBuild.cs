@@ -27,7 +27,7 @@ namespace HexInterstellar.BuildingSystem
                 if (amount < price[i])
                 {
                     button.interactable = false;
-                    Debug.Log(resources.GetAmount(mat[i].ToString()) + "   " + mat[i].ToString());
+                    //Debug.Log(resources.GetAmount(mat[i].ToString()) + "   " + mat[i].ToString());
                     return;
                 }
             }

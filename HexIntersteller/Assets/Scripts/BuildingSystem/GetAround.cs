@@ -9,8 +9,8 @@ namespace HexInterstellar.BuildingSystem
     public class GetAround : MonoBehaviour
     {
 
-        Dictionary<Materials, int> materials = new Dictionary<Materials, int>() { { Materials.credit, 0 }, { Materials.metal, 0 }, { Materials.planar, 0 }, { Materials.ration, 0 } };
-        private GameObject levelGrid = GameObject.Find("Level Grid");
+        [SerializeField]Dictionary<Materials, int> materials = new Dictionary<Materials, int>() { { Materials.credit, 0 }, { Materials.metal, 0 }, { Materials.planar, 0 }, { Materials.ration, 0 } };
+        [SerializeField]private GameObject levelGrid;
 
         private List<Vector3> points = new List<Vector3>
         {
@@ -25,9 +25,10 @@ namespace HexInterstellar.BuildingSystem
         // Start is called before the first frame update
         void Start()
         {
-            FuckAroundAndFindOut();
+            levelGrid = GameObject.Find("Tilemap");
+            FindAround();
         }
-        public void FuckAroundAndFindOut()
+        public void FindAround()
         {
             for (int i = 0; i < levelGrid.transform.childCount; i++)
             {
@@ -38,6 +39,7 @@ namespace HexInterstellar.BuildingSystem
                     {
                         if (child.childCount != 1)
                         {
+                            Debug.Log(child.GetChild(1).name);
                             switch (child.GetChild(1).name)
                             {
                                 case "Food(Clone)":
@@ -63,10 +65,13 @@ namespace HexInterstellar.BuildingSystem
         }
         public void GiveResourses(ResourceSystem.Resources playerRes)
         {
+            Debug.Log("initialized giveresourses");
             foreach  (KeyValuePair<Materials,int> kvp in materials)
             {
-                if(kvp.Value != 0)
+                Debug.Log(kvp.Key.ToString() + "  " + kvp.Value);
+                if (kvp.Value != 0)
                 {
+                    
                     playerRes.AddAmount(kvp.Value, kvp.Key.ToString());
                 }
             }
