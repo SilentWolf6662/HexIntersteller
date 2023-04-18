@@ -11,6 +11,7 @@ namespace HexInterstellar.BuildingSystem
 
         Dictionary<Materials, int> materials = new Dictionary<Materials, int>() { { Materials.credit, 0 }, { Materials.metal, 0 }, { Materials.planar, 0 }, { Materials.ration, 0 } };
         private GameObject levelGrid = GameObject.Find("Level Grid");
+
         private List<Vector3> points = new List<Vector3>
         {
             new Vector3(0, 0, 0.5f),
@@ -23,6 +24,10 @@ namespace HexInterstellar.BuildingSystem
         };
         // Start is called before the first frame update
         void Start()
+        {
+            FuckAroundAndFindOut();
+        }
+        public void FuckAroundAndFindOut()
         {
             for (int i = 0; i < levelGrid.transform.childCount; i++)
             {
@@ -49,19 +54,22 @@ namespace HexInterstellar.BuildingSystem
                                     break;
                                 default:
                                     break;
-                                //case "Credit(":
-                            } 
-                               
+                            }
+
                         }
                     }
                 }
             }
         }
-
-        // Update is called once per frame
-        void Update()
+        public void GiveResourses(ResourceSystem.Resources playerRes)
         {
-
+            foreach  (KeyValuePair<Materials,int> kvp in materials)
+            {
+                if(kvp.Value != 0)
+                {
+                    playerRes.AddAmount(kvp.Value, kvp.Key.ToString());
+                }
+            }
         }
     }
 }
