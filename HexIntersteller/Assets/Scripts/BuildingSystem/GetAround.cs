@@ -26,7 +26,6 @@ namespace HexInterstellar.BuildingSystem
         void Start()
         {
             levelGrid = GameObject.Find("Tilemap");
-            FindAround();
         }
         public void FindAround()
         {
@@ -55,6 +54,7 @@ namespace HexInterstellar.BuildingSystem
                                     materials[Materials.metal]++;
                                     break;
                                 default:
+
                                     break;
                             }
 
@@ -65,10 +65,11 @@ namespace HexInterstellar.BuildingSystem
         }
         public void GiveResourses(ResourceSystem.Resources playerRes)
         {
+            FindAround();
             Debug.Log("initialized giveresourses");
             foreach  (KeyValuePair<Materials,int> kvp in materials)
             {
-                Debug.Log(kvp.Key.ToString() + "  " + kvp.Value);
+                Debug.Log(kvp.Key + "  " + kvp.Value);
                 if (kvp.Value != 0)
                 {
                     
