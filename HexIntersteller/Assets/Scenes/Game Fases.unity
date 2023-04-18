@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTurn: 0
   p1Resources: {fileID: 604975973}
-  p2Resources: {fileID: 1952563224}
+  p2Resources: {fileID: 1794092828}
   p1Buildings: {fileID: 1503237589}
   p2Buildings: {fileID: 1512292755}
   phaseState: 0
@@ -1166,7 +1166,7 @@ GameObject:
   - component: {fileID: 355960090}
   - component: {fileID: 355960089}
   m_Layer: 5
-  m_Name: End Turn
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,7 +1239,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 22101299}
         m_TargetAssemblyTypeName: HexInterstellar.PhaseSystem.PhaseManager, HexInterstellar
-        m_MethodName: EndTurn
+        m_MethodName: NextPhase
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2641,7 +2641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Offset: {x: 0, y: 0, z: -3.02113}
+  m_Offset: {x: 0, y: 0, z: 1.182326}
   m_ApplyAfter: 1
   m_PreserveComposition: 0
 --- !u!1 &1282725641
@@ -3255,8 +3255,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555813461}
-  m_LocalRotation: {x: 0.2357636, y: 0, z: 0, w: 0.97181046}
-  m_LocalPosition: {x: 0, y: 6.9843874, z: -10.685274}
+  m_LocalRotation: {x: 0.23576358, y: -0.000000032380736, z: 0.000000007855645, w: 0.97181046}
+  m_LocalPosition: {x: 0, y: 5.0582166, z: -6.949112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3946,6 +3946,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
+--- !u!114 &1794092828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3712800382694336323, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
+  m_PrefabInstance: {fileID: 1794092827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da71ea788ea54594ea85c7253dd27926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1943834962
 GameObject:
   m_ObjectHideFlags: 3
@@ -4071,17 +4082,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1952563224 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3712800382694336323, guid: 581b4e098adb94d499e1868ab02e9eb6, type: 3}
-  m_PrefabInstance: {fileID: 1794092827}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da71ea788ea54594ea85c7253dd27926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2020283302

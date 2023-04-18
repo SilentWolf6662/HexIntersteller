@@ -13,7 +13,7 @@ namespace HexInterstellar.ResourceSystem
 		private void Start()
 		{
 			creditAmount = planarAmount = metalAmount = rationAmount = 10;
-			Debug.Log($"{creditAmount} , {planarAmount} , {metalAmount} , {rationAmount}");
+			//Debug.Log($"{creditAmount}, {planarAmount}, {metalAmount}, {rationAmount}");
 		}
 
 		public int GetAmount(string resourceType) => resourceType switch { "ration" => rationAmount, "metal" => metalAmount, "planar" => planarAmount, "credit" => creditAmount, _ => 0 };

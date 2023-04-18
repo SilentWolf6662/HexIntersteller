@@ -3,13 +3,12 @@
 	public enum PhaseState
 	{
 		StartPhase = 0,
-		DrawPhase = 1,
-		BuildPhase = 2,
-		EndPhase = 3,
-		StartCombatPhase = 4,
-		CombatPhase = 5,
-		AttackPhase = 6,
-		DefendPhase = 7,
-		EndCombatPhase = 8
+		BuildPhase = 1,
+		EndPhase = 2,
+		StartCombatPhase = 3,
+		CombatPhase = 4,
+		AttackPhase = 5,
+		DefendPhase = 6,
+		EndCombatPhase = 7
 	}
 }

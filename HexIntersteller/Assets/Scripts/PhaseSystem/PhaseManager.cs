@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace HexInterstellar.PhaseSystem
 {
@@ -10,11 +12,49 @@ namespace HexInterstellar.PhaseSystem
         [SerializeField] private PhaseState phaseState;
         private void Start()
         {
-            if (Random.Range(0, 2) == 1)
+            if (Random.Range(0, 2) == 1) 
                 playerTurn = PlayerTurn.P1;
             else
                 playerTurn = PlayerTurn.P2;
             phaseState = PhaseState.StartPhase;
+            Debug.Log($"Start Phase: {phaseState.ToString()}");
+            NextPhase();
+        }
+        public void NextPhase()
+        {
+            while (true)
+            {
+                switch (phaseState)
+                {
+                    case PhaseState.StartPhase:
+                        phaseState = PhaseState.BuildPhase;
+                        Debug.Log($"Phase: {phaseState.ToString()}");
+                        break;
+                    case PhaseState.BuildPhase:
+                        phaseState = PhaseState.EndPhase;
+                        Debug.Log($"Phase: {phaseState.ToString()}");
+                        continue;
+                    case PhaseState.EndPhase:
+                        EndTurn();
+                        phaseState = PhaseState.BuildPhase;
+                        Debug.Log($"Phase: {phaseState.ToString()}");
+                        break;
+                    case PhaseState.StartCombatPhase:
+                        break;
+                    case PhaseState.CombatPhase:
+                        break;
+                    case PhaseState.AttackPhase:
+                        break;
+                    case PhaseState.DefendPhase:
+                        break;
+                    case PhaseState.EndCombatPhase:
+                        break;
+                    default:
+                        Debug.LogError("Not a valid Phase");
+                        break;
+                }
+                break;
+            }
         }
         public void EndTurn()
         {
@@ -29,13 +69,12 @@ namespace HexInterstellar.PhaseSystem
                 playerTurn = PlayerTurn.P2;
             }
         }
-        public void GiveResources(GameObject building, ResourceSystem.Resources resources)
+        public static void GiveResources(GameObject building, ResourceSystem.Resources resources)
         {
             for (int i = 0; i < building.transform.childCount; i++)
             {
                 building.transform.GetChild(i).gameObject.GetComponent<BuildingSystem.GetAround>().GiveResourses(resources);
             }
         }
-
     }
 }
