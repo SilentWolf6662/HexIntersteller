@@ -15,7 +15,6 @@ namespace HexInterstellar.ResourceSystem
             Hexi = new List<GameObject>();
             for (int i = 0; i < Tilemap.transform.childCount; i++)
             {
-                //Debug.Log(i);
                 GameObject tile = Tilemap.transform.GetChild(i).gameObject;
                 if (tile.CompareTag("Hex") && tile.name != "Hex Tile Middle")
                     Hexi.Add(tile);
@@ -31,14 +30,17 @@ namespace HexInterstellar.ResourceSystem
             int rnd = Random.Range(0, 4);
             if (step > 100)
             {
-                Debug.Log("Could Not finish assigning!");
+                Debug.LogError("Could Not Finish Assigning!");
                 return;
             }
 
             if (amountCheck[rnd] > 0)
             {
                 amountCheck[rnd]--;
-                Instantiate(Tokens[rnd], new Vector3(Hexi[i].transform.position.x + 0.2f, Hexi[i].transform.position.y + 0.018f, Hexi[i].transform.position.z + -0.2f), Quaternion.Euler(-90, -90, 0), Hexi[i].transform);
+                Instantiate(Tokens[rnd], 
+                Hexi[i].transform.position + 
+                new Vector3(0.2f, 0.018f, -0.2f), 
+                Quaternion.Euler(-90, -90, 0), Hexi[i].transform);
                 return;
             }
             step++;
