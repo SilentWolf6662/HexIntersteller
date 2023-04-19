@@ -263,7 +263,7 @@ MonoBehaviour:
         m_MethodName: SelectedObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 5486449477349635001, guid: dc55f23fbd232954abc58cd69f9b5023, type: 3}
+          m_ObjectArgument: {fileID: 1408269321786689960, guid: fe5a94181d1b42441be8fba7f6e193b4, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df114cceedc7634ca4cceabd634f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSpawn: {fileID: 5486449477349635001, guid: dc55f23fbd232954abc58cd69f9b5023, type: 3}
+  toSpawn: {fileID: 1408269321786689960, guid: fe5a94181d1b42441be8fba7f6e193b4, type: 3}
   resources: {fileID: 501076042}
 --- !u!1 &93736672
 GameObject:
@@ -412,7 +412,7 @@ MonoBehaviour:
         m_MethodName: SelectedObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 5855630601843229877, guid: 4a7185cf9ad327a4bb345b880956767a, type: 3}
+          m_ObjectArgument: {fileID: 1608262864660648458, guid: a7371b0b2cbfd524c993ceae7740e6ae, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df114cceedc7634ca4cceabd634f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSpawn: {fileID: 5855630601843229877, guid: 4a7185cf9ad327a4bb345b880956767a, type: 3}
+  toSpawn: {fileID: 1608262864660648458, guid: a7371b0b2cbfd524c993ceae7740e6ae, type: 3}
   resources: {fileID: 501076042}
 --- !u!1 &112305695
 GameObject:
@@ -1950,7 +1950,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367339863}
-  m_LocalRotation: {x: 0.21809474, y: -0.00000001679218, z: 0.000000003752621, w: 0.9759276}
+  m_LocalRotation: {x: 0.21809474, y: 0.00000001679218, z: -0.000000003752621, w: 0.9759276}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3993,7 +3993,7 @@ MonoBehaviour:
         m_MethodName: SelectedObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2463388470170431503, guid: d258702110a55bb4abeed5cae2c55ad9, type: 3}
+          m_ObjectArgument: {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4050,7 +4050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df114cceedc7634ca4cceabd634f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSpawn: {fileID: 2463388470170431503, guid: d258702110a55bb4abeed5cae2c55ad9, type: 3}
+  toSpawn: {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
   resources: {fileID: 501076042}
 --- !u!1 &1010130006
 GameObject:
@@ -6857,9 +6857,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceBuild: {fileID: -7206337566587353235, guid: c2e46a3ff174fd043835c4dffb095691, type: 3}
   objects:
-  - {fileID: 2463388470170431503, guid: d258702110a55bb4abeed5cae2c55ad9, type: 3}
-  - {fileID: 5486449477349635001, guid: dc55f23fbd232954abc58cd69f9b5023, type: 3}
-  - {fileID: 5855630601843229877, guid: 4a7185cf9ad327a4bb345b880956767a, type: 3}
+  - {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
+  - {fileID: 1408269321786689960, guid: fe5a94181d1b42441be8fba7f6e193b4, type: 3}
+  - {fileID: 1608262864660648458, guid: a7371b0b2cbfd524c993ceae7740e6ae, type: 3}
   layerMasks:
   - serializedVersion: 2
     m_Bits: 256
@@ -6882,9 +6882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db44620e6d1d2d428b8412f647461a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stationPrefab: {fileID: 1608262864660648458, guid: 3372d4e8b832ef34880db9f80b20b909, type: 3}
-  cityPrefab: {fileID: 5423953801796426983, guid: 8356c19b19d531049963445fc4245dfe, type: 3}
-  lanePrefab: {fileID: 919132149155446097, guid: 24adf65a183810342b9fceaa80811ff4, type: 3}
+  stationPrefab: {fileID: 1608262864660648458, guid: a7371b0b2cbfd524c993ceae7740e6ae, type: 3}
+  cityPrefab: {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
+  lanePrefab: {fileID: 1408269321786689960, guid: fe5a94181d1b42441be8fba7f6e193b4, type: 3}
   station: []
   city: []
   lane: []

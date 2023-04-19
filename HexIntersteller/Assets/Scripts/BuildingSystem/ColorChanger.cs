@@ -73,6 +73,8 @@ namespace HexInterstellar
                             if (playerTurn == PlayerTurn.P2)
                                 material = frameMetalMaterials[2];
                             break;
+                        default:
+                            break;
                     }
                 }
             }
