@@ -30,10 +30,12 @@ namespace HexInterstellar.BuildingSystem
         private PhaseSystem.PhaseManager phaseManager;
         private PhaseSystem.PlayerTurn P1 = PhaseSystem.PlayerTurn.P1;
         private PhaseSystem.PlayerTurn P2 = PhaseSystem.PlayerTurn.P2;
+        private ColorChanger colorChanger;
 
         private void Start()
         {
             phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseSystem.PhaseManager>();
+            colorChanger = GetComponent<ColorChanger>();
             PlaceBuild.action.Enable();
         }
         // Update is called once per frame
@@ -74,17 +76,18 @@ namespace HexInterstellar.BuildingSystem
 
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(ray.origin, ray.direction * 10);
-            if (pendingObject != null)
-                if (Physics.Raycast(ray, out hit, 1000, pendingObject.GetComponent<LayerPlacement>().placedOn))
-                {
-                    pos = hit.transform.position;
-                    rot = hit.transform.rotation;
-                }
+            if (pendingObject == null) return;
+            if (Physics.Raycast(ray, out hit, 1000, pendingObject.GetComponent<LayerPlacement>().placedOn))
+            {
+                pos = hit.transform.position;
+                rot = hit.transform.rotation;
+            }
         }
         public void SelectedObject(GameObject gm)
         {
             Destroy(pendingObject);
             pendingObject = Instantiate(gm, pos, transform.rotation);
+            colorChanger.ChangePlayerColor(pendingObject, phaseManager.playerTurn);
         }
 
     }

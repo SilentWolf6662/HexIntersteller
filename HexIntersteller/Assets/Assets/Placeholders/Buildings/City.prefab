@@ -141,3 +141,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5551204a18501b944b2ea26487e333f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelGrid: {fileID: 0}
