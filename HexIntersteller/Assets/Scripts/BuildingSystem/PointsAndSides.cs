@@ -41,17 +41,12 @@ namespace HexInterstellar.BuildingSystem
         }
         public void AddPoints(GameObject child)
         {
-            //bool samePlace = false;
             for (int i = 0; i < points.Count; i++)
             {
-                /*for (int j = 0; j < transform.childCount; j++)
-                {
-                    if(transform.GetChild(j).transform.position == child.transform.position + points[i])
-                    {
-                        samePlace = true;
-                    }
-                }*/
-                Instantiate(cityPoint, child.transform.position + points[i], pointParent.transform.rotation, pointParent.transform);
+                Vector3 position = child.transform.position;
+                Instantiate(cityPoint, position + points[i], 
+                pointParent.transform.rotation, 
+                pointParent.transform);
             }
         }
         public void Addsides(GameObject child)
@@ -59,7 +54,10 @@ namespace HexInterstellar.BuildingSystem
             for (int i = 0; i < sides.Count; i++)
             {
                 Vector3 position = child.transform.position;
-                GameObject Road = Instantiate(lanePoint, position + sides[i], sideParent.transform.rotation, sideParent.transform);
+                GameObject Road = Instantiate(lanePoint, 
+                position + sides[i], 
+                sideParent.transform.rotation, 
+                sideParent.transform);
                 Road.transform.LookAt(position);
             }
         }

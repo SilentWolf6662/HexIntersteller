@@ -69,6 +69,10 @@ namespace HexInterstellar.BuildingSystem
             {
                 pendingObject.transform.SetParent(p2Building.transform);
             }
+            GetAround runFind;
+            pendingObject.TryGetComponent<GetAround>(out runFind);
+            if(runFind != null)
+                runFind.FindAround();
             pendingObject = null;
         }
         private void FixedUpdate()

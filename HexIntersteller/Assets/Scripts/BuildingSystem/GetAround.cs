@@ -8,7 +8,7 @@ namespace HexInterstellar.BuildingSystem
 
     public class GetAround : MonoBehaviour
     {
-
+        [SerializeField] private List<GameObject> around = new List<GameObject>();
         [SerializeField] private Dictionary<Materials, int> materials = new Dictionary<Materials, int>() { { Materials.credit, 0 }, { Materials.metal, 0 }, { Materials.planar, 0 }, { Materials.ration, 0 } };
         [SerializeField] private GameObject levelGrid;
 
@@ -36,6 +36,7 @@ namespace HexInterstellar.BuildingSystem
                 {
                     if (child.position == transform.position + points[j])
                     {
+                        around.Add(child.gameObject);
                         if (child.childCount != 1)
                         {
                             Debug.Log(child.GetChild(1).name);
