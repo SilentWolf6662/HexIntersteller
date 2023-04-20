@@ -123,6 +123,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16510565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16510567}
+  - component: {fileID: 16510566}
+  m_Layer: 0
+  m_Name: Shipe Move
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &16510566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16510565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88db65148b90be54b84e06a7b7fcd0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseLeftClick: {fileID: 0}
+  hexagon:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!4 &16510567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16510565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22101298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,7 +1999,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367339863}
-  m_LocalRotation: {x: 0.21809474, y: 0.00000001679218, z: -0.000000003752621, w: 0.9759276}
+  m_LocalRotation: {x: 0.21809474, y: -0.00000001679218, z: 0.000000003752621, w: 0.9759276}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4973,6 +5021,7 @@ MonoBehaviour:
   XYAxis: {fileID: -5630151704836100654, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   ZAxis: {fileID: 0}
   camOffset: {fileID: 1222568193}
+  zoomSensitivity: 1
   sensitivity: 1
   activateOrbitInput: {fileID: -6046568028729504078, guid: c2e46a3ff174fd043835c4dffb095691, type: 3}
   zoomInput: {fileID: -2329813893773181039, guid: c2e46a3ff174fd043835c4dffb095691, type: 3}
@@ -5696,6 +5745,10 @@ PrefabInstance:
     - target: {fileID: 2643347706704013332, guid: ac9be20b77eab9247968770c67339070, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4329883
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372713073237856761, guid: ac9be20b77eab9247968770c67339070, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6249904651119534948, guid: ac9be20b77eab9247968770c67339070, type: 3}
       propertyPath: m_Name
