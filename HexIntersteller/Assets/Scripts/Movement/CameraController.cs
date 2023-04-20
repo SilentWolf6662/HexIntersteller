@@ -1,13 +1,15 @@
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace HexInterstellar.Movement
 {
 	public class CameraController : CinemachineInputProvider
 	{
 		[SerializeField] private CinemachineCameraOffset camOffset;
-		[SerializeField] private float sensitivity = 10;
+		[SerializeField] private float zoomSensitivity = 1;
+		[SerializeField] private float sensitivity = 1;
 		[SerializeField] private InputActionReference activateOrbitInput, zoomInput;
 		private InputAction action;
 		private float cameraDistance;
@@ -25,7 +27,7 @@ namespace HexInterstellar.Movement
 
 			// Takes z offset and adding mouse wheel y multiplied with sensitivity
 			// that multiplies with Time.deltaTime to make the same feeling of smooth zoom
-			camOffset.m_Offset.z += zoomInputValue.y * (sensitivity * Time.deltaTime);
+			camOffset.m_Offset.z += zoomInputValue.y * (zoomSensitivity * Time.deltaTime);
 		}
 		// ReSharper disable Unity.PerformanceAnalysis
 		public override float GetAxisValue(int axis)
@@ -39,7 +41,7 @@ namespace HexInterstellar.Movement
 			// Resovles the movement based on axises
 			action = ResolveForPlayer(axis, axis == 2 ? ZAxis : XYAxis);
 			if (action == null) return 0;
-			return axis switch { 0 => action.ReadValue<Vector2>().x, 1 => action.ReadValue<Vector2>().y, 2 => action.ReadValue<float>(), _ => 0 };
+			return axis switch { 0 => action.ReadValue<Vector2>().x * sensitivity * Time.deltaTime, 1 => action.ReadValue<Vector2>().y * sensitivity * Time.deltaTime, 2 => action.ReadValue<float>() * sensitivity * Time.deltaTime, _ => 0 * sensitivity * Time.deltaTime };
 		}
 	}
 }
