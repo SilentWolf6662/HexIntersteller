@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2097096472166959280}
   - component: {fileID: -6310631221202375116}
   - component: {fileID: 450161211616830655}
-  - component: {fileID: -9152800981843206641}
-  m_Layer: 0
+  - component: {fileID: -4359641544559479856}
+  m_Layer: 9
   m_Name: Station
-  m_TagString: Untagged
+  m_TagString: Station
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materials: 0000000001000000
   price: 0300000004000000
---- !u!114 &-9152800981843206641
+--- !u!114 &-4359641544559479856
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,6 +90,10 @@ PrefabInstance:
     - target: {fileID: 3524715667503021581, guid: 928c87d30538e344da195f75451d1f48, type: 3}
       propertyPath: m_Name
       value: City
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524715667503021581, guid: 928c87d30538e344da195f75451d1f48, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4552137020946798309, guid: 928c87d30538e344da195f75451d1f48, type: 3}
       propertyPath: m_RootOrder
@@ -153,6 +157,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 6090817371479149577, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090817371479149577, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
+      propertyPath: m_TagString
+      value: Station
+      objectReference: {fileID: 0}
     - target: {fileID: 7105373245411549403, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -204,6 +216,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7105373245411549403, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
   m_PrefabInstance: {fileID: 3938708942317880388}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7075142691503736909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6090817371479149577, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
+  m_PrefabInstance: {fileID: 3938708942317880388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5713147205609091759
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075142691503736909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6239881831769578202, guid: 1f32500d9c10f01499828617dda20588, type: 3}
 --- !u!1001 &5861950605282819427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,6 +245,14 @@ PrefabInstance:
     - target: {fileID: 4185520147059690926, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
       propertyPath: m_Name
       value: GlassDome
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185520147059690926, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185520147059690926, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
+      propertyPath: m_TagString
+      value: Station
       objectReference: {fileID: 0}
     - target: {fileID: 4324079549068002526, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
       propertyPath: m_RootOrder
@@ -261,6 +300,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
+--- !u!1 &7731591363526881485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4185520147059690926, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
+  m_PrefabInstance: {fileID: 5861950605282819427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8686336394306401708
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731591363526881485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4711208715938537054, guid: 1f32500d9c10f01499828617dda20588, type: 3}
 --- !u!4 &7880140964625283517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4324079549068002526, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
