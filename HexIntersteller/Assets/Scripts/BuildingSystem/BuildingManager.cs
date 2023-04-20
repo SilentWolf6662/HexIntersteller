@@ -69,7 +69,6 @@ namespace HexInterstellar.BuildingSystem
             }
             if (phaseManager.playerTurn == P1)
             {
-                
                 pendingObject.transform.SetParent(p1Building.transform);
             }
             else if (phaseManager.playerTurn == P2)
@@ -80,6 +79,7 @@ namespace HexInterstellar.BuildingSystem
             pendingObject.TryGetComponent<GetAround>(out runFind);
             if(runFind != null)
                 runFind.FindAround();
+            Destroy(hit.transform.gameObject);
             pendingObject = null;
         }
         private void FixedUpdate()

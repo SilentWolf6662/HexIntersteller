@@ -24,8 +24,8 @@ namespace HexInterstellar
             {
                 IsAround(parent.GetChild(i));
             }
-            Debug.Log(grid.Count);
-            Debug.Log(grid[new Vector3Int(1, 0, 0)].transform.position);
+            //Debug.Log(grid.Count);
+            //Debug.Log(grid[new Vector3Int(1, 0, 0)].transform.position);
         }
         private void IsAround(Transform child)
         {
