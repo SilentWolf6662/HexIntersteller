@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2097096472166959280}
   - component: {fileID: -6310631221202375116}
   - component: {fileID: 450161211616830655}
+  - component: {fileID: -9152800981843206641}
   m_Layer: 0
   m_Name: Station
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608262864660648458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9408293, y: 2.905222, z: 1.5981674}
-  m_LocalScale: {x: 0.25, y: 0.125, z: 0.25}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.025, y: 0.0125, z: 0.025}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 992120695033790036}
@@ -65,6 +66,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materials: 0000000001000000
   price: 0300000004000000
+--- !u!114 &-9152800981843206641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608262864660648458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5551204a18501b944b2ea26487e333f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  around: []
+  levelGrid: {fileID: 0}
 --- !u!1001 &3668401818544449713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,7 +89,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3524715667503021581, guid: 928c87d30538e344da195f75451d1f48, type: 3}
       propertyPath: m_Name
-      value: Cube.247
+      value: City
       objectReference: {fileID: 0}
     - target: {fileID: 4552137020946798309, guid: 928c87d30538e344da195f75451d1f48, type: 3}
       propertyPath: m_RootOrder
@@ -136,7 +151,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6090817371479149577, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
       propertyPath: m_Name
-      value: Cylinder.003
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7105373245411549403, guid: 5165b219e9bb4ba468fd5f8d8e192254, type: 3}
       propertyPath: m_RootOrder
@@ -198,7 +213,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4185520147059690926, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
       propertyPath: m_Name
-      value: Sphere
+      value: GlassDome
       objectReference: {fileID: 0}
     - target: {fileID: 4324079549068002526, guid: cb0c85604f2204d4d95f9fde72512417, type: 3}
       propertyPath: m_RootOrder

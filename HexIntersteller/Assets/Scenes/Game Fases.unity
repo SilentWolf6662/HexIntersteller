@@ -1967,7 +1967,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367339863}
-  m_LocalRotation: {x: 0.21809474, y: -0.00000001679218, z: 0.000000003752621, w: 0.9759276}
+  m_LocalRotation: {x: 0.21809474, y: 0.00000001679218, z: -0.000000003752621, w: 0.9759276}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2908,7 +2908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &839940211
@@ -6837,7 +6837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1738940487}
   - component: {fileID: 1738940488}
-  - component: {fileID: 1738940489}
   m_Layer: 0
   m_Name: BuildingManager
   m_TagString: Untagged
@@ -6877,6 +6876,12 @@ MonoBehaviour:
   - {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
   - {fileID: 1408269321786689960, guid: fe5a94181d1b42441be8fba7f6e193b4, type: 3}
   - {fileID: 1608262864660648458, guid: a7371b0b2cbfd524c993ceae7740e6ae, type: 3}
+  habitatP1: {fileID: 1794667064504465894, guid: dbc5c0cedb13bc944b5276d0646d6d1d, type: 3}
+  stationP1: {fileID: 2142903954411758151, guid: b54e5002f3fcf704280ca71122503c99, type: 3}
+  hyperlaneP1: {fileID: 479496640729530747, guid: bcf9d35bac540e6428b2882e2f00e356, type: 3}
+  habitatP2: {fileID: 8212722038419784708, guid: d104b0fed81da4b40b644cbd3b58b255, type: 3}
+  stationP2: {fileID: 2634367830921734008, guid: 738d70a48b6563b4a99ecba41bd4d984, type: 3}
+  hyperlaneP2: {fileID: 1803456180732073764, guid: 124fb8d0ea2357a499ad1e854237b291, type: 3}
   layerMasks:
   - serializedVersion: 2
     m_Bits: 256
@@ -6887,40 +6892,6 @@ MonoBehaviour:
   resources: {fileID: 501076042}
   p1Building: {fileID: 1503237589}
   p2Building: {fileID: 1512292755}
---- !u!114 &1738940489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738940486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8db44620e6d1d2d428b8412f647461a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stationPrefab: {fileID: 1608262864660648458, guid: a7371b0b2cbfd524c993ceae7740e6ae, type: 3}
-  cityPrefab: {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
-  lanePrefab: {fileID: 1408269321786689960, guid: fe5a94181d1b42441be8fba7f6e193b4, type: 3}
-  station: []
-  city: []
-  lane: []
-  cityMaterials:
-  - {fileID: 2100000, guid: c4764dce0236fc043a62821a546ce1fc, type: 2}
-  - {fileID: 2100000, guid: d02080c472459514a98a0f76d75db1e8, type: 2}
-  - {fileID: 2100000, guid: 9aa7bc5e965a32f40ad06aea9f339510, type: 2}
-  trueMetalMaterials:
-  - {fileID: 2100000, guid: 3eb62fce757e8a543bb2769fa72e7280, type: 2}
-  - {fileID: 2100000, guid: 44b64e2343123984eae02dd399594e4f, type: 2}
-  - {fileID: 2100000, guid: 897b4254fab89c347b6041981b41edea, type: 2}
-  metalMaterials:
-  - {fileID: 2100000, guid: c1287d1c1cf6efa4782cae03d28a32ee, type: 2}
-  - {fileID: 2100000, guid: b3fed334e54519b4b8a3b3bd4c224e92, type: 2}
-  - {fileID: 2100000, guid: e9c73574b6ee0d147a87f3089c4302d7, type: 2}
-  frameMetalMaterials:
-  - {fileID: 2100000, guid: 08ab00ae4ba943e478db1db6da286b38, type: 2}
-  - {fileID: 2100000, guid: 96596087f5205da4682619b4c0f4524e, type: 2}
-  - {fileID: 2100000, guid: 56ee2b5b217ece34eb5e8f523ba4d3a3, type: 2}
 --- !u!1 &1744406509
 GameObject:
   m_ObjectHideFlags: 0

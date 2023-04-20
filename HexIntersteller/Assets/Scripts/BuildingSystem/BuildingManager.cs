@@ -1,4 +1,6 @@
+using HexInterstellar.PhaseSystem;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 namespace HexInterstellar.BuildingSystem
@@ -9,6 +11,13 @@ namespace HexInterstellar.BuildingSystem
 
         public GameObject[] objects;
         private GameObject pendingObject;
+
+        public GameObject habitatP1;
+        public GameObject stationP1;
+        public GameObject hyperlaneP1;
+        public GameObject habitatP2;
+        public GameObject stationP2;
+        public GameObject hyperlaneP2;
 
         private Vector3 pos;
 
@@ -30,12 +39,10 @@ namespace HexInterstellar.BuildingSystem
         private PhaseSystem.PhaseManager phaseManager;
         private PhaseSystem.PlayerTurn P1 = PhaseSystem.PlayerTurn.P1;
         private PhaseSystem.PlayerTurn P2 = PhaseSystem.PlayerTurn.P2;
-        private ColorChanger colorChanger;
 
         private void Start()
         {
             phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseSystem.PhaseManager>();
-            colorChanger = GetComponent<ColorChanger>();
             PlaceBuild.action.Enable();
         }
         // Update is called once per frame
@@ -91,7 +98,36 @@ namespace HexInterstellar.BuildingSystem
         {
             Destroy(pendingObject);
             pendingObject = Instantiate(gm, pos, transform.rotation);
-            colorChanger.ChangePlayerColor(pendingObject, phaseManager.playerTurn);
+            ReplaceToPlayerObject();
+        }
+        private void ReplaceToPlayerObject()
+        {
+            var test = phaseManager.playerTurn;
+            if (test == PlayerTurn.P1)
+            {
+                if (pendingObject.name == "Habitat(Clone)")
+                    pendingObject = ReplaceObject(pendingObject, habitatP1, pos, transform.rotation);
+                else if (pendingObject.name == "Hyperlane(Clone)")
+                    pendingObject = ReplaceObject(pendingObject, hyperlaneP1, pos, transform.rotation);
+                else if (pendingObject.name == "Station(Clone)")
+                    pendingObject = ReplaceObject(pendingObject, stationP1, pos, transform.rotation);
+            }
+            else if (test == PlayerTurn.P2)
+            {
+                if (pendingObject.name == "Habitat(Clone)")
+                    pendingObject = ReplaceObject(pendingObject, habitatP2, pos, transform.rotation);
+                else if (pendingObject.name == "Hyperlane(Clone)")
+                    pendingObject = ReplaceObject(pendingObject, hyperlaneP2, pos, transform.rotation);
+                else if (pendingObject.name == "Station(Clone)")
+                    pendingObject = ReplaceObject(pendingObject, stationP2, pos, transform.rotation);
+            }
+        }
+
+        public GameObject ReplaceObject(GameObject defaultObject, GameObject playerObject, Vector3 position, Quaternion rotation)
+        {
+            GameObject replacedObject = Instantiate(playerObject, position, rotation);
+            Destroy(defaultObject);
+            return replacedObject;
         }
 
     }

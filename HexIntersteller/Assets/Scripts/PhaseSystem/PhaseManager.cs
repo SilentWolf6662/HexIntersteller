@@ -67,6 +67,7 @@ namespace HexInterstellar.PhaseSystem
         }
         public static void GiveResources(GameObject building, ResourceSystem.Resources resources)
         {
+            Debug.Log(building.transform.childCount);
             for (int i = 0; i < building.transform.childCount; i++)
             {
                 building.transform.GetChild(i).gameObject.GetComponent<BuildingSystem.GetAround>().GiveResourses(resources);
