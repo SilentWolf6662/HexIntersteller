@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HexInterstellar
+namespace HexInterstellar.BuildingSystem
 {
     public class GetSorounding : MonoBehaviour
     {

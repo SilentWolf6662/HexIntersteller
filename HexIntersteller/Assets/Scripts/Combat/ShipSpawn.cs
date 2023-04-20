@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace HexInterstellar
+namespace HexInterstellar.Combat
 {
     public class ShipSpawn : MonoBehaviour
     {
@@ -27,10 +27,8 @@ namespace HexInterstellar
         void FixedUpdate()
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out raycastHit, stationLayer)) 
-            {
+            if (Physics.Raycast(ray, out raycastHit,1000,stationLayer)) 
                 overStation = true;
-            }
             else 
                 overStation = false;
             if (overStation && OpenMenu.action.ReadValue<float>() > 0 && raycastHit.transform.gameObject.tag == "Station")
