@@ -10,9 +10,9 @@ namespace HexInterstellar.Combat
     {
         [SerializeField] private InputActionReference mouseLeftClick;
         [SerializeField] private LayerMask hexagon;
-        private RaycastHit raycastHit = new RaycastHit();
+        private RaycastHit hit = new RaycastHit();
         private Ray ray;
-        private GameObject startHex;
+        private GameObject startHex = null;
         private List<GameObject> hexiAround;
         // Start is called before the first frame update
         void Start()
@@ -24,23 +24,87 @@ namespace HexInterstellar.Combat
         void FixedUpdate()
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out raycastHit,1000,hexagon) && mouseLeftClick.action.ReadValue<float>() > 0)
+            if (Physics.Raycast(ray, out hit,1000,hexagon) && mouseLeftClick.action.ReadValue<float>() > 0)
             {
                 if (startHex == null)
                 {
-                    startHex = raycastHit.transform.gameObject;
-                    startHex.TryGetComponent(out GetSorounding getHexi);
-                    if (getHexi != null)
-                    {
-                        hexiAround = getHexi.GetHexi();
-                    }
+                    GetStartHex();
+                    
                 }
                 else if(startHex != null)
                 {
-
+                    MoveTo();
+                    
                 }
                 
             }
+        }
+        private void GetStartHex()
+        {
+            startHex = hit.transform.gameObject;
+            if (startHex.transform.parent.Find("Ships").childCount == 0)
+            {
+                startHex = null;
+                return;
+            }
+            Debug.Log("StartHex Got");
+            startHex.transform.parent.gameObject.TryGetComponent(out GetSorounding getHexi);
+            if (getHexi != null)
+            {
+                Debug.Log("Get Hexi");
+                hexiAround = getHexi.GetHexi();
+            }
+        }
+        private void MoveTo()
+        {
+            GameObject obj = hit.transform.gameObject;
+            if (obj == startHex)
+                return;
+            Debug.Log("Move To");
+            for (int i = 0; i < hexiAround.Count; i++)
+            {
+                if (obj.transform.parent.gameObject == hexiAround[i])
+                {
+                    Debug.Log("Found Hexi OBJ");
+                    GameObject ships = startHex.transform.parent.Find("Ships").gameObject;
+                    if(obj.transform.parent.Find("Ships").childCount > 0)
+                    {
+                        if (obj.transform.parent.Find("Ships").childCount > ships.transform.childCount)
+                        {
+                            for (int j = 0; j < ships.transform.childCount; j++)
+                            {
+                                Destroy(ships.transform.GetChild(0).gameObject);
+                            }
+                        }
+                        else if (obj.transform.parent.Find("Ships").childCount < ships.transform.childCount)
+                        {
+                            for (int j = 0; j < obj.transform.parent.Find("Ships").childCount; j++)
+                            {
+                                Destroy(obj.transform.parent.Find("Ships").GetChild(0).gameObject);
+                            }
+                        }
+                        else if(obj.transform.parent.Find("Ships").childCount == ships.transform.childCount)
+                        {
+                            for (int j = 0; j < obj.transform.parent.Find("Ships").childCount; j++)
+                            {
+                                Destroy(obj.transform.parent.Find("Ships").GetChild(0).gameObject);
+                            }
+                            for (int j = 0; j < ships.transform.childCount; j++)
+                            {
+                                Destroy(ships.transform.GetChild(0).gameObject);
+                            }
+                        }
+                    }
+                    for (int j = ships.transform.childCount-1; j >= 0; j--)
+                    {
+                        GameObject indvShip = ships.transform.GetChild(j).gameObject;
+                        Transform newParent = obj.transform.parent.Find("Ships");
+                        indvShip.transform.SetParent(newParent);
+                        indvShip.transform.position = newParent.position + new Vector3(Random.Range(-0.25f, 0.25f), Random.Range(0, 0.25f), Random.Range(-0.25f, 0.25f));
+                    }
+                }
+            }
+            startHex = null;
         }
     }
 }
