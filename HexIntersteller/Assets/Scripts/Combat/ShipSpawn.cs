@@ -46,7 +46,7 @@ namespace HexInterstellar.Combat
             int index = Random.Range(0, 3);
             GameObject gm = Station.transform.parent.gameObject.GetComponent<BuildingSystem.GetAround>().around[0];
             Vector3 offset = new Vector3(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f));
-            Quaternion rot = Quaternion.Euler(new Vector3(0, Random.rotation.y, 0));
+            Quaternion rot = Quaternion.Euler(new Vector3(-90, 0, Random.rotation.z));
             Instantiate(ships[index], gm.transform.position+offset, rot, gm.transform.Find("Ships"));
         }
     }
