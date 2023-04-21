@@ -7061,6 +7061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503237590}
+  - component: {fileID: 1503237591}
   m_Layer: 0
   m_Name: P1 Buildings
   m_TagString: Untagged
@@ -7083,6 +7084,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503237591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503237589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af6e85953e6d904884de7dddab6e84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1512292755
 GameObject:
   m_ObjectHideFlags: 0
@@ -7092,6 +7105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1512292756}
+  - component: {fileID: 1512292757}
   m_Layer: 0
   m_Name: P2 Buildings
   m_TagString: Untagged
@@ -7114,6 +7128,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1512292757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512292755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af6e85953e6d904884de7dddab6e84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1513911559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8546768074540806370, guid: ac9be20b77eab9247968770c67339070, type: 3}

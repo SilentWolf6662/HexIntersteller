@@ -67,34 +67,6 @@ namespace HexInterstellar.Combat
                 {
                     Debug.Log("Found Hexi OBJ");
                     GameObject ships = startHex.transform.parent.Find("Ships").gameObject;
-                    if(obj.transform.parent.Find("Ships").childCount > 0)
-                    {
-                        if (obj.transform.parent.Find("Ships").childCount > ships.transform.childCount)
-                        {
-                            for (int j = 0; j < ships.transform.childCount; j++)
-                            {
-                                Destroy(ships.transform.GetChild(0).gameObject);
-                            }
-                        }
-                        else if (obj.transform.parent.Find("Ships").childCount < ships.transform.childCount)
-                        {
-                            for (int j = 0; j < obj.transform.parent.Find("Ships").childCount; j++)
-                            {
-                                Destroy(obj.transform.parent.Find("Ships").GetChild(0).gameObject);
-                            }
-                        }
-                        else if(obj.transform.parent.Find("Ships").childCount == ships.transform.childCount)
-                        {
-                            for (int j = 0; j < obj.transform.parent.Find("Ships").childCount; j++)
-                            {
-                                Destroy(obj.transform.parent.Find("Ships").GetChild(0).gameObject);
-                            }
-                            for (int j = 0; j < ships.transform.childCount; j++)
-                            {
-                                Destroy(ships.transform.GetChild(0).gameObject);
-                            }
-                        }
-                    }
                     for (int j = ships.transform.childCount-1; j >= 0; j--)
                     {
                         GameObject indvShip = ships.transform.GetChild(j).gameObject;
