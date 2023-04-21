@@ -40,6 +40,8 @@ namespace HexInterstellar.BuildingSystem
         private const PlayerTurn P1 = PlayerTurn.P1;
         private const PlayerTurn P2 = PlayerTurn.P2;
 
+        private bool active;
+
         private void Awake()
         {
             camera1 = Camera.main;
@@ -58,9 +60,10 @@ namespace HexInterstellar.BuildingSystem
                 pendingObject.transform.rotation = rot;
                 
 
-                if (PlaceBuild.action.ReadValue<float>() > 0 && !EventSystem.current.IsPointerOverGameObject())
+                if (PlaceBuild.action.triggered && !EventSystem.current.IsPointerOverGameObject())
                 {
                     PlaceObject();
+                    resources.UpdateUI();
                 }
             }
         }
@@ -68,7 +71,7 @@ namespace HexInterstellar.BuildingSystem
         {
             price = pendingObject.GetComponent<PriceForBuilding>();
             for (int i = 0; i < price.price.Length; i++)
-            {
+            {     
                 resources.RemoveAmount(price.price[i], price.materials[i].ToString());
             }
             if (phaseManager.playerTurn == P1)

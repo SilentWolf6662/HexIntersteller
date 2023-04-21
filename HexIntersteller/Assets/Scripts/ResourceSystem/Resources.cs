@@ -14,6 +14,8 @@ namespace HexInterstellar.ResourceSystem
 		{
 			creditAmount = planarAmount = metalAmount = rationAmount = 10;
 			//Debug.Log($"{creditAmount}, {planarAmount}, {metalAmount}, {rationAmount}");
+			UpdateUI();
+			UpdateBal();
 		}
 
 		public int GetAmount(string resourceType) => resourceType switch { "ration" => rationAmount, "metal" => metalAmount, "planar" => planarAmount, "credit" => creditAmount, _ => 0 };
@@ -76,6 +78,10 @@ namespace HexInterstellar.ResourceSystem
 		}
 		public void UpdateUI()
 		{
+			if (metalAmount <= 0) metalAmount = 0;
+			if (rationAmount <= 0) rationAmount = 0;
+			if (planarAmount <= 0) planarAmount = 0;
+			if (creditAmount <= 0) creditAmount = 0;
 			metalText.text = $"{metalAmount}x";
 			rationText.text = $"{rationAmount}x";
 			planarText.text = $"{planarAmount}x";
@@ -83,10 +89,10 @@ namespace HexInterstellar.ResourceSystem
 		}
         public void UpdateBal()
         {
-            for (int i = 0; i < costToBuild.Length; i++)
-            {
-				costToBuild[i].CheckBalance();
-            }
+	        for (int i = 0; i < costToBuild.Length; i++)
+	        {
+		        costToBuild[i].CheckBalance();
+	        }
         }
     }
 }
