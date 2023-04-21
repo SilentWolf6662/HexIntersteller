@@ -123,54 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &16510565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 16510567}
-  - component: {fileID: 16510566}
-  m_Layer: 0
-  m_Name: Shipe Move
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &16510566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16510565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88db65148b90be54b84e06a7b7fcd0b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseLeftClick: {fileID: 0}
-  hexagon:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!4 &16510567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16510565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22101298
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +710,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120036712}
   m_CullTransparentMesh: 1
+--- !u!1 &123549652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074269817448, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &123549657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123549652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &138129888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072853070040, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &138129893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138129888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &142472418
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +938,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151248613}
   m_CullTransparentMesh: 1
+--- !u!1 &154350279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074646027416, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &154350284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154350279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &155034588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073103367927, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &155034593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155034588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &171554509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073311889098, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &171554514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171554509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &215854211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1284,37 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000015259, y: 0.00031281}
   m_SizeDelta: {x: 800, y: 428.04}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &232401031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074702963308, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &232401036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232401031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &235776683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1664,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314088661}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &328888413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073089296111, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &328888418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328888413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &340719720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +2002,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358854837}
   m_CullTransparentMesh: 1
+--- !u!1 &364620239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074471844452, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &364620244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364620239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &364943504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073806984966, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &364943509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364943504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &365711723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,7 +2230,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367339863}
-  m_LocalRotation: {x: 0.21809474, y: -0.00000001679218, z: 0.000000003752621, w: 0.9759276}
+  m_LocalRotation: {x: 0.21809474, y: -0.000000015546206, z: 0.000000003474178, w: 0.9759276}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2008,6 +2239,68 @@ Transform:
   m_Father: {fileID: 1222568189}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &394151260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073494510747, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &394151265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394151260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &428899082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073150853578, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &428899087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428899082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &453985059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,6 +2813,68 @@ Transform:
   m_Father: {fileID: 839940212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527837398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072637201838, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &527837403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527837398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &549955319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074348857772, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &549955324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549955319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &574977344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +3049,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599215901}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &623726223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074660840093, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &623726228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623726223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &632320611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +3350,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632845040}
   m_CullTransparentMesh: 1
+--- !u!1 &649563186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074448631855, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &649563191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649563186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &656078319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072640637243, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &656078324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656078319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &663726089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,6 +3488,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663726089}
   m_CullTransparentMesh: 1
+--- !u!1 &678145015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073734262694, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &678145020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678145015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &756406699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074327739292, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &756406704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756406699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &773748235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3588,68 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &776061542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074405840266, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &776061547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776061542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &819599810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073727734204, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &819599815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819599810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &839940211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,6 +4389,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918681172}
   m_CullTransparentMesh: 1
+--- !u!1 &928209011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074059980075, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &928209016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928209011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &928799018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,6 +4555,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928799018}
   m_CullTransparentMesh: 1
+--- !u!1 &931457384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073290233925, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &931457389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931457384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &932015685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072606645084, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &932015690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932015685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &942425027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,9 +4785,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   ships:
-  - {fileID: 1500022444007323431, guid: 0ab69c4ab1fd789438f728b33d09c2e1, type: 3}
-  - {fileID: 1500022444007323431, guid: ca6fee24cdb8ecc4286ebc7411e50d23, type: 3}
-  - {fileID: 1500022444007323431, guid: aaa8f6c1c3faefe4bab61e958fd25fb1, type: 3}
+  - {fileID: 909367403222965066, guid: da9c920737d72134e9aaf98748db0fb3, type: 3}
+  - {fileID: 4241202898672601455, guid: 621d26a3d07e7d640a157d8bf276e566, type: 3}
+  - {fileID: 4315488439500535582, guid: d7fa7274358279e47b4541104412447d, type: 3}
   OpenMenu: {fileID: -7206337566587353235, guid: c2e46a3ff174fd043835c4dffb095691, type: 3}
   Station: {fileID: 0}
   button: {fileID: 1690312093}
@@ -4290,6 +4955,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toSpawn: {fileID: 813684365010544931, guid: a89424c268d409141bbef97c7ce8817f, type: 3}
   resources: {fileID: 501076042}
+--- !u!1 &999641301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074034206650, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &999641306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999641301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1010130006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,6 +5095,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1065824878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073068080419, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1065824883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065824878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1094719856
 GameObject:
   m_ObjectHideFlags: 0
@@ -4534,6 +5261,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094719856}
   m_CullTransparentMesh: 1
+--- !u!1 &1121459541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073733399931, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1121459546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121459541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1132248261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,7 +5535,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148727917}
-  m_LocalRotation: {x: 0.2534013, y: -1e-45, z: -0, w: 0.9673613}
+  m_LocalRotation: {x: 0.2534013, y: 2.1155592e-15, z: -5.0608985e-16, w: 0.9673613}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4786,6 +5544,68 @@ Transform:
   m_Father: {fileID: 1222568189}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1173291033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073136590063, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1173291038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173291033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &1216995766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073821708139, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216995771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216995766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1221186837
 GameObject:
   m_ObjectHideFlags: 0
@@ -5253,6 +6073,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246335411}
   m_CullTransparentMesh: 1
+--- !u!1 &1247904640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073286074101, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1247904645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247904640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &1272404149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074135297898, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1272404154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272404149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1282725641
 GameObject:
   m_ObjectHideFlags: 3
@@ -5418,6 +6300,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 200.13608}
   m_SizeDelta: {x: 1250, y: 110.23999}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1306897058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072879068718, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306897063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306897058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1311923982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5573,6 +6486,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332483533}
   m_CullTransparentMesh: 1
+--- !u!1 &1392562478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074368457685, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1392562483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392562478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1399187518
 GameObject:
   m_ObjectHideFlags: 0
@@ -5727,6 +6671,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405957284}
   m_CullTransparentMesh: 1
+--- !u!1 &1422046865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073803503992, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1422046870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422046865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1001 &1425786688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5745,10 +6720,6 @@ PrefabInstance:
     - target: {fileID: 2643347706704013332, guid: ac9be20b77eab9247968770c67339070, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4329883
-      objectReference: {fileID: 0}
-    - target: {fileID: 5372713073237856761, guid: ac9be20b77eab9247968770c67339070, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6249904651119534948, guid: ac9be20b77eab9247968770c67339070, type: 3}
       propertyPath: m_Name
@@ -5814,7 +6785,56 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4724017577620651516, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578443429103, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578273767955, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577920553888, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577461040846, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577482043518, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576728895612, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576846631120, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578329554151, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576824790611, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578534036830, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577413718354, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578588079780, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577635721828, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578643913473, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577478518097, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577443907649, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577105992683, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577617461057, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576726386788, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577600003329, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576807290227, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578554423079, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578241814829, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578668286507, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578513403497, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577044067109, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578023965895, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577071150551, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578779411683, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578038741389, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578602926475, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577390719504, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578254957590, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578042484723, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578726208791, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577470538251, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577041090480, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578019889632, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577671518835, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578242874352, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578235236151, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578420625600, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578016791252, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576760710056, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017578484821251, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577929222449, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017577827934689, guid: ac9be20b77eab9247968770c67339070, type: 3}
+    - {fileID: 4724017576814979237, guid: ac9be20b77eab9247968770c67339070, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac9be20b77eab9247968770c67339070, type: 3}
 --- !u!1 &1455682551
 GameObject:
@@ -5922,6 +6942,68 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1484155343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073273084890, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484155348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484155343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &1486423117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074482589259, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1486423122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486423117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1503237589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5984,6 +7066,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1513911559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074540806370, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513911564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513911559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1522937700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6062,6 +7175,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1527871493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073297513600, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1527871498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527871493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1538590490
 GameObject:
   m_ObjectHideFlags: 0
@@ -6138,6 +7282,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538590490}
   m_CullTransparentMesh: 1
+--- !u!1 &1546201207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074234141856, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1546201212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546201207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1555813461
 GameObject:
   m_ObjectHideFlags: 0
@@ -6918,6 +8093,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1631121482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074547696520, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631121487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631121482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &1656754752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073168114570, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1656754757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656754752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1669426351
 GameObject:
   m_ObjectHideFlags: 0
@@ -7734,6 +8971,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810861682}
   m_CullTransparentMesh: 1
+--- !u!1 &1826598487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073817369164, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1826598492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826598487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &1869583381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073231078648, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1869583386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869583381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &1884720674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768074430050048, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884720679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884720674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1891374946
 GameObject:
   m_ObjectHideFlags: 0
@@ -7869,6 +9199,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891374946}
   m_CullTransparentMesh: 1
+--- !u!1 &1917678738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073147728759, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1917678743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917678738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &1943834962
 GameObject:
   m_ObjectHideFlags: 3
@@ -7996,6 +9357,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1996180036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072705561952, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1996180041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996180036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &2020283302
 GameObject:
   m_ObjectHideFlags: 3
@@ -8325,6 +9717,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023752370}
   m_CullTransparentMesh: 1
+--- !u!1 &2068476705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072870308856, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2068476710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068476705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &2068933539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073475706841, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2068933544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068933539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &2073547223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768072986091099, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2073547228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073547223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
+--- !u!1 &2105774827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546768073812419679, guid: ac9be20b77eab9247968770c67339070, type: 3}
+  m_PrefabInstance: {fileID: 1425786688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2105774832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105774827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!1 &2127208635
 GameObject:
   m_ObjectHideFlags: 0
