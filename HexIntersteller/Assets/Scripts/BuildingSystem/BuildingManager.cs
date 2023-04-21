@@ -1,6 +1,5 @@
 using HexInterstellar.PhaseSystem;
 using UnityEngine;
-using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 namespace HexInterstellar.BuildingSystem
@@ -36,13 +35,18 @@ namespace HexInterstellar.BuildingSystem
         public GameObject p1Building;
         public GameObject p2Building;
 
-        private PhaseSystem.PhaseManager phaseManager;
-        private PhaseSystem.PlayerTurn P1 = PhaseSystem.PlayerTurn.P1;
-        private PhaseSystem.PlayerTurn P2 = PhaseSystem.PlayerTurn.P2;
+        private PhaseManager phaseManager;
+        private Camera camera1;
+        private const PlayerTurn P1 = PlayerTurn.P1;
+        private const PlayerTurn P2 = PlayerTurn.P2;
 
+        private void Awake()
+        {
+            camera1 = Camera.main;
+        }
         private void Start()
         {
-            phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseSystem.PhaseManager>();
+            phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseManager>();
             PlaceBuild.action.Enable();
         }
         // Update is called once per frame
@@ -75,8 +79,7 @@ namespace HexInterstellar.BuildingSystem
             {
                 pendingObject.transform.SetParent(p2Building.transform);
             }
-            GetAround runFind;
-            pendingObject.TryGetComponent<GetAround>(out runFind);
+            pendingObject.TryGetComponent(out GetAround runFind);
             if(runFind != null)
                 runFind.FindAround();
             Destroy(hit.transform.gameObject);
@@ -85,7 +88,7 @@ namespace HexInterstellar.BuildingSystem
         private void FixedUpdate()
         {
 
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            ray = camera1.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(ray.origin, ray.direction * 10);
             if (pendingObject == null) return;
             if (Physics.Raycast(ray, out hit, 1000, pendingObject.GetComponent<LayerPlacement>().placedOn))
@@ -102,7 +105,7 @@ namespace HexInterstellar.BuildingSystem
         }
         private void ReplaceToPlayerObject()
         {
-            var test = phaseManager.playerTurn;
+            PlayerTurn test = phaseManager.playerTurn;
             if (test == PlayerTurn.P1)
             {
                 if (pendingObject.name == "Habitat(Clone)")
