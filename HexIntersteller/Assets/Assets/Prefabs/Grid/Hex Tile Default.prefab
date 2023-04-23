@@ -258,7 +258,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1135630358329524972, guid: 758801b08b6c70d49b8ff3fd1c6cc310, type: 3}
   m_PrefabInstance: {fileID: 3450521090216006352}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1671692942100229815
+--- !u!114 &6030739551482039517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,23 +267,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2314893558247591996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8a93c6383601a47bd197825c8ed888, type: 3}
+  m_Script: {fileID: 11500000, guid: dfdc5750f1b61ac4f90a8268e38ecf3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Planets:
-  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
-  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
-  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
-  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
-  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
-  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
-  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
-  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
-  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
-  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
-  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
-  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
   - {fileID: 2100000, guid: 9076eceb474004d40aea1823d5cc1fe1, type: 2}
+  - {fileID: 2100000, guid: b733592746c40834393c7c0db85cec23, type: 2}
+  - {fileID: 2100000, guid: 4e7969b3175ba2848b86bf092f58dd06, type: 2}
+  - {fileID: 2100000, guid: 0f1eb3b4eb9efdd4494a40329ea4efa0, type: 2}
+  - {fileID: 2100000, guid: ff8c030cae181474289645f587f705e4, type: 2}
+  - {fileID: 2100000, guid: 7596615ed8b15a84daa1ba441d450679, type: 2}
+  - {fileID: 2100000, guid: 5037bd11f9f695e4caee0b02e5330145, type: 2}
+  - {fileID: 2100000, guid: d2fab0922aef20349acb81b3459222c2, type: 2}
+  - {fileID: 2100000, guid: 9dd0543a8dfcf0d4c93fcc51ce8cc683, type: 2}
+  - {fileID: 2100000, guid: 41a4b9088e1b6504491c7848e4ab2a91, type: 2}
+  - {fileID: 2100000, guid: a98a0e529aecafb4e92171500620b248, type: 2}
+  - {fileID: 2100000, guid: c54cfcde2dab1aa479c3685fa33e976b, type: 2}
+  - {fileID: 2100000, guid: 38b5b8292358bfc4a816450e7ded1f7d, type: 2}
 --- !u!4 &3128866777434442374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 326864362135476310, guid: 758801b08b6c70d49b8ff3fd1c6cc310, type: 3}

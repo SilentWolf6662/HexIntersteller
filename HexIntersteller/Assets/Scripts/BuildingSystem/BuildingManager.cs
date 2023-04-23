@@ -23,6 +23,7 @@ namespace HexInterstellar.BuildingSystem
         private Quaternion rot;
 
         private RaycastHit hit;
+        private GameObject hitOBJ;
 
         [SerializeField] private LayerMask[] layerMasks;
 
@@ -85,7 +86,7 @@ namespace HexInterstellar.BuildingSystem
             pendingObject.TryGetComponent(out GetAround runFind);
             if(runFind != null)
                 runFind.FindAround();
-            Destroy(hit.transform.gameObject);
+            Destroy(hitOBJ);
             pendingObject = null;
         }
         private void FixedUpdate()
@@ -96,6 +97,7 @@ namespace HexInterstellar.BuildingSystem
             if (pendingObject == null) return;
             if (Physics.Raycast(ray, out hit, 1000, pendingObject.GetComponent<LayerPlacement>().placedOn))
             {
+                hitOBJ = hit.transform.gameObject;
                 pos = hit.transform.position;
                 rot = hit.transform.rotation;
             }
